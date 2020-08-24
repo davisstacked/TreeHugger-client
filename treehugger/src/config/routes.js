@@ -8,7 +8,7 @@ import Register from '../components/Auth/Register';
 export default ({ currentUser, setCurrentUser }) => (
     <Switch>
         <Route exact path='/' component={Home} />
-        <Route path='/login' render={() => <Login setCurrentUser={setCurrentUser} />} />
+        <Route path='/login' render={() => <Login setCurrentUser={setCurrentUser} />} /> 
         <Route path='/register' component={Register} />
     </Switch>
 );
