@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './Photo.css';
 
 function Photo (props) {
-    const { photo, list } = props;
+    const { photo } = props;
 
     return (
         <Link to={`/photos/${photo._id}`}>
