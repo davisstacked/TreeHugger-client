@@ -7,11 +7,11 @@ function NavBar({ currentUser, logout }) {
     <nav>
       <div className="container">
         <NavLink className="logo" to='/'>
-          <h1>GameLib</h1>
+          
+          <h1>TreeHugger</h1>
         </NavLink>
         <ul className="nav-list">
           <li className='nav-item'>
-            {/* Don't forget the 'exact' prop for home nav link */}
             <NavLink className='nav-link' exact to='/'>Home</NavLink>
           </li>
           <li className='nav-item'>
