@@ -13,7 +13,10 @@ function User (props) {
                     <h4>{user.username}</h4>
                 </section>
                 <section className="image-wrapper">
-                    <img src={user.image} alt={user.title} height="100" />
+                    <img src={user.image} alt={user.username} height="100" />
+                </section>
+                <section className="photo-wrapper">
+                    <img src={user.photos} />
                 </section>
             </div>
         </Link>

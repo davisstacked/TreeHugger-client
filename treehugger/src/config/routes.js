@@ -5,9 +5,9 @@ import Home from '../pages/Home/Home';
 import PhotosListContainer from '../pages/PhotosListContainer/PhotosListContainer';
 import PhotoContainer from '../pages/PhotoContainer/PhotoContainer';
 import NewPhotoContainer from '../pages/NewPhotoContainer/NewPhotoContainer';
+import UserContainer from '../pages/UserContainer/UserContainer';
 import Login from '../components/Auth/Login';
 import Register from '../components/Auth/Register';
-import UserContainer from '../pages/UserContainer/UserContainer';
 
 export default ({ currentUser, setCurrentUser }) => (
     <Switch>
