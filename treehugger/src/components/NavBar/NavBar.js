@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+
 import './NavBar.css';
 
 function NavBar({ currentUser, logout }) {
@@ -20,7 +21,7 @@ function NavBar({ currentUser, logout }) {
           {currentUser && (
             <React.Fragment>
               <li className='nav-item'>
-                <NavLink className='nav-link' to='/profile'>Profile</NavLink>
+                <NavLink className='nav-link' to={`/users/${currentUser}`}>Profile</NavLink>
               </li>
               <li className='nav-item'>
                 <span onClick={logout} className='nav-link'>Logout</span>

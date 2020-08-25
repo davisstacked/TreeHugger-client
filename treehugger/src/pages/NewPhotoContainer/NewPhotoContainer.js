@@ -12,10 +12,6 @@ class NewPhotoContainer extends React.Component {
 
     handleChange = (event) => {
         //console.log(event.target.id);
-        if (event.target.value === 'on') {
-            event.target.value = true;
-        }
-
         this.setState({[event.target.name]: event.target.value})
     };
 

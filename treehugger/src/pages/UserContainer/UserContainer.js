@@ -11,7 +11,8 @@ class UserContainer extends React.Component {
     componentDidMount() {
         UserModel.getUserById(this.props.match.params.id)
         .then((result) => {
-            console.log(result);
+            this.setState({user: result})
+            console.log(result)
         })
         .catch((err) => console.log(err))
     }

@@ -21,7 +21,7 @@ export default ({ currentUser, setCurrentUser }) => (
 
         <Route path='/photos/:id' component={PhotoContainer} />
         <Route path='/photos' component={PhotosListContainer} />
-        <Route path='/profile' component={UserContainer} />
+        <Route path='/users/:id' component={UserContainer} /> 
         <Route path='/login' render={() => <Login setCurrentUser={setCurrentUser} />} /> 
         <Route path='/register' component={Register} />
     </Switch>
