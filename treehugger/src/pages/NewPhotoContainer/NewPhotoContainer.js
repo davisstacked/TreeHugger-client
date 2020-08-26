@@ -22,7 +22,8 @@ class NewPhotoContainer extends React.Component {
                 console.log(result);
             });
             // Redirect to Photos Index (history comes from react-router-dom)
-        this.props.history.push('/photos');
+        // this.props.history.push('/photos');
+        this.props.history.push('/users/id');
     }
 
     render() {

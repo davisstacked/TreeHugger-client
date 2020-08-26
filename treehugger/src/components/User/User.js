@@ -20,6 +20,9 @@ function User (props) {
                 <Link to={`/photos/new`}>
             <button>Add Photos</button>
                 </Link>
+                <Link to={`/photos/edit`}>
+            <button>Edit Photos</button>
+                </Link>
             </div>
        
     );
