@@ -12,14 +12,14 @@ class PhotoModel {
         .then((response) => response.json())
     }
 
-    static createPhoto = (photo) => {
+    static createPhoto = (photo, userId) => {
         return fetch(url, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
                 'authorization': token,
             },
-            body: JSON.stringify(photo)
+            body: JSON.stringify({ photo, userId })
         })
             .then((response) => response.json())
     }

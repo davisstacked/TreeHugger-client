@@ -38,6 +38,10 @@ class Register extends Component {
                     <input onChange={this.handleChange} type="text" id="username" name="username" value={this.state.username} />
                 </div>
                 <div className="form-group">
+                    <label htmlFor="image">Profile Photo</label>
+                    <input onChange={this.handleChange} type="text" id="image" name="image" value={this.state.image} />
+                </div>
+                <div className="form-group">
                     <label htmlFor="password">Password</label>
                     <input onChange={this.handleChange} type="password" id="password" name="password" value={this.state.password} />
                 </div>
