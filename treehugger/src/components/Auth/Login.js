@@ -15,13 +15,15 @@ class Login extends Component {
         });
     };
 
+    // Make sure your login route has a submit function so we can store that info: 
     handleSubmit = (event) => {
         event.preventDefault();
         axios.post(`${process.env.REACT_APP_API}/auth/login`, this.state)
         .then((res) => {
-            console.log(res);
+            console.log(res.data);
+            localStorage.setItem('id', res.data.id)
             this.props.setCurrentUser(res.data.token);
-            // this.props.history.push('/photos');
+            this.props.history.push(`/users/${res.data.id}`);
         })
         .catch((err) => {
             console.log(err.response.status);

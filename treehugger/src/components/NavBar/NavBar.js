@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+
 import './NavBar.css';
 
 function NavBar({ currentUser, logout }) {
@@ -7,11 +8,11 @@ function NavBar({ currentUser, logout }) {
     <nav>
       <div className="container">
         <NavLink className="logo" to='/'>
-          <h1>GameLib</h1>
+          
+          <h1>TreeHugger</h1>
         </NavLink>
         <ul className="nav-list">
           <li className='nav-item'>
-            {/* Don't forget the 'exact' prop for home nav link */}
             <NavLink className='nav-link' exact to='/'>Home</NavLink>
           </li>
           <li className='nav-item'>
@@ -20,7 +21,7 @@ function NavBar({ currentUser, logout }) {
           {currentUser && (
             <React.Fragment>
               <li className='nav-item'>
-                <NavLink className='nav-link' to='/profile'>Profile</NavLink>
+                <NavLink className='nav-link' to={`/users/${currentUser}`}>Profile</NavLink>
               </li>
               <li className='nav-item'>
                 <span onClick={logout} className='nav-link'>Logout</span>
