@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './Photo.css';
+// import './Photo.css';
 
 function Photo (props) {
     const { photo, list } = props;

@@ -8,26 +8,24 @@ function HomeContent () {
 			<h3>Become a TreeHugger</h3>
 			<div class="aboutHolder">
 				<div class="info">
-					<h4><b>Share your nature photos</b></h4>
+					<h4><b>RELAX</b></h4>
 					<p>
-						Enjoy breathtaking vistas from around the globe. Share your nature photos with a community of nature lovers.
+						A welcome break from the world of concrete and steal. Leave the confines of society behind and enjoy the natural wonder of our special planet.  
 					</p>
 				</div>
 
 				<div class="info">
-					<h4><b>Find events in your area</b></h4>
+					<h4><b>CREATE</b></h4>
 					<p>
-						We have events in every U.S. state. Meet up virtually or in person
-						with those who have the same interests as you.
+						Create a community of fellow nature lovers by creating a profile and sharing your favorite nature photos.
 					</p>
 				</div>
 
 				<div class="info">
-					<h4><b>Explore</b></h4>
+					<h4><b>EXPLORE</b></h4>
 					<p>
-						Explore other people’s antique collections and findings. We have
-						over 1 million people posting pictures of their priceless pieces
-						every day.
+						Explore other people’s nature photos. We have
+						an ever-growing community of like-minded humans focused on getting outside.
 					</p>
 				</div>
 			</div>

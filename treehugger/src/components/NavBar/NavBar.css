@@ -1,5 +1,5 @@
 nav {
-    background-color: #002D59;
+    background-color: darkgreen;
     color: #fff;
     margin-bottom: 40px;
   }
@@ -38,8 +38,9 @@ nav {
     padding: 10px;
   }
   
-  .nav-link:hover,
-  .nav-link.active {
-    background-color: #004D99;
-  }
+  .nav-link:hover {
+    background-color: lightgreen  }
   
+  .nav-link.active {
+    background-color: green;
+  }

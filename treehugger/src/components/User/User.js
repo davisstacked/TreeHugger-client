@@ -7,7 +7,6 @@ function User (props) {
     const { user } = props;
 
     return (
-        <Link to={`/users/${user._id}`}>
             <div className="user-card">
                 <section className="title-wrapper">
                     <h4>{user.username}</h4>
@@ -18,8 +17,11 @@ function User (props) {
                 <section className="photo-wrapper">
                     <img src={user.photos} />
                 </section>
+                <Link to={`/photos/new`}>
+            <button>Add Photos</button>
+                </Link>
             </div>
-        </Link>
+       
     );
 }
 
