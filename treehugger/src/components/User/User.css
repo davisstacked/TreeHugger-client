@@ -1,0 +1,21 @@
+
+  .profile-photo {
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+}
+
+.profile-image-wrapper {
+    width: 50vh;
+}
+
+.profile-photos-wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+}

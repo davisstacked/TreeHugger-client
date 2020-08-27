@@ -1,25 +1,34 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// import './User.css';
+import './User.css';
 
 function User (props) {
     const { user } = props;
-
+    console.log(user)
+    const photos = []
+    if (user.photos) {
+        for (let i=0; i < user.photos.length; i++) {
+            photos.push(<Link to={`/photos/${user.photos[i]._id}`}><img src={user.photos[i].image} height="200" /></Link>)
+      }
+    }
     return (
-        <Link to={`/users/${user._id}`}>
             <div className="user-card">
-                <section className="title-wrapper">
-                    <h4>{user.username}</h4>
+                <section className="profile-image-wrapper">
+                    <img className="profile-photo" src={user.image} alt={user.username} height="300" />
                 </section>
-                <section className="image-wrapper">
-                    <img src={user.image} alt={user.username} height="100" />
+                <section className="username-wrapper">
+                    <h1><strong>{user.username}</strong></h1>
                 </section>
-                <section className="photo-wrapper">
-                    <img src={user.photos} />
+                <Link to={`/photos/new`}>
+            <button>Add Photos</button>
+                </Link>
+                <section className="profile-photos-wrapper">
+                    {/* <img src={user.photos} /> */}
+                    { photos } 
                 </section>
             </div>
-        </Link>
+       
     );
 }
 

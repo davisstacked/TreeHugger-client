@@ -5,6 +5,7 @@ import Home from '../pages/Home/Home';
 import PhotosListContainer from '../pages/PhotosListContainer/PhotosListContainer';
 import PhotoContainer from '../pages/PhotoContainer/PhotoContainer';
 import NewPhotoContainer from '../pages/NewPhotoContainer/NewPhotoContainer';
+import EditPhotoContainer from '../pages/EditPhotoContainer/EditPhotoContainer';
 import UserContainer from '../pages/UserContainer/UserContainer';
 import Login from '../components/Auth/Login';
 import Register from '../components/Auth/Register';
@@ -18,8 +19,8 @@ export default ({ currentUser, setCurrentUser }) => (
             ? <NewPhotoContainer />
             : <Redirect to='/login' />
         } />
-
-        <Route path='/photos/:id' component={PhotoContainer} />
+        <Route exact path='/photos/:id' component={PhotoContainer} />
+        <Route path='/photos/:id/edit' component={EditPhotoContainer} />
         <Route path='/photos' component={PhotosListContainer} />
         <Route path='/users/:id' component={UserContainer} /> 
         <Route path='/login' render={() => <Login setCurrentUser={setCurrentUser} />} /> 

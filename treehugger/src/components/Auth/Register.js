@@ -33,15 +33,19 @@ class Register extends Component {
         console.log(this.props);
         return (
             <form onSubmit={this.handleSubmit}>
-                <div className="form-group">
-                    <label htmlFor="username">Username</label>
-                    <input onChange={this.handleChange} type="text" id="username" name="username" value={this.state.username} />
+                <div className="form-group row">
+                    <label className="col-form-label" htmlFor="username">Username</label>
+                    <input className="form-control" onChange={this.handleChange} type="text" id="username" name="username" value={this.state.username} />
                 </div>
-                <div className="form-group">
-                    <label htmlFor="password">Password</label>
-                    <input onChange={this.handleChange} type="password" id="password" name="password" value={this.state.password} />
+                <div className="form-group row">
+                    <label className="col-form-label" htmlFor="image">Profile Photo</label>
+                    <input className="form-control" onChange={this.handleChange} type="text" id="image" name="image" value={this.state.image} />
                 </div>
-                <button className="btn btn-primary float-right" type="submit">Register</button>
+                <div className="form-group row">
+                    <label className="col-form-label" htmlFor="password">Password</label>
+                    <input className="form-control" onChange={this.handleChange} type="password" id="password" name="password" value={this.state.password} />
+                </div>
+                <button className="btn btn-success float-right" type="submit">Register</button>
             </form>
         )
     }

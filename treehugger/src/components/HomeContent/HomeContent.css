@@ -1,0 +1,41 @@
+.about {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 70vw;
+	align-items: center;
+	margin: 22px auto;
+}
+
+.about h3 {
+	font-size: 2em;
+	margin-bottom: 22px;
+	font-weight: normal;
+}
+
+.info {
+	padding: 2% 3% 3% 3%;
+	background-color: white;
+	margin: 0 15px;
+	width: 30%;
+	box-shadow: 0px 2px 4px gray;
+}
+
+.info:first-child {
+	margin-left: 0;
+}
+
+.info:last-child {
+	margin-right: 0;
+}
+
+.info h4 {
+	text-align: center;
+	margin-bottom: 7%;
+	font-size: 1.2em;
+}
+
+.aboutHolder {
+	display: flex;
+	justify-content: space-between;
+}

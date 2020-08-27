@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import axios from 'axios';
 
+import './Login.css'
+
 
 class Login extends Component {
     state = {
@@ -35,15 +37,19 @@ class Login extends Component {
     render() {
         return(
             <form onSubmit={this.handleSubmit}>
-                <div className="form-group">
-                    <label htmlFor="name">Username</label>
-                    <input onChange={this.handleChange} type="username" id="username" name="username" value={this.state.username} />
+                <div className="form-group row">
+                    <label className="col-sm-2 col-form-label" htmlFor="name">Username</label>
+                    <input className="form-control" onChange={this.handleChange} type="username" id="username" name="username" value={this.state.username} />
                 </div>
-                <div className="form-group">
-                    <label htmlFor="password">Password</label>
-                    <input onChange={this.handleChange} type="password" id="password" name="password" value={this.state.password} />
+                <div className="form-group row">
+                    <label className="col-sm-2 col-form-label" htmlFor="password">Password</label>
+                    <input className="form-control" onChange={this.handleChange} type="password" id="password" name="password" value={this.state.password} />
                 </div>
-                <button className="btn btn-primary float-right" type="submit">Login</button>
+                <div className="form-group row">
+                    <div className="col-sm-2 col-form-label">
+                        <button className="form-control btn btn-success float-right" type="submit">Login</button>
+                    </div>
+                </div>
             </form>
         )
     }

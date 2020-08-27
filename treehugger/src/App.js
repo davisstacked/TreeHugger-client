@@ -5,6 +5,7 @@ import Routes from './config/routes';
 import NavBar from './components/NavBar/NavBar';
 import setAuthHeader from './utils/setAuthHeader';
 import './App.css';
+import Footer from './components/Footer/Footer';
 
 
 class App extends React.Component {
@@ -52,7 +53,9 @@ class App extends React.Component {
         <NavBar currentUser={this.state.currentUser} logout={this.logout} />
         <div className="container">
           <Routes currentUser={this.state.currentUser} setCurrentUser={this.setCurrentUser} />
-        </div>
+        </div> 
+        <Footer />
+
       </React.Fragment>
     );
   }

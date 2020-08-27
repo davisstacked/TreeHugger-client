@@ -16,13 +16,16 @@ class NewPhotoContainer extends React.Component {
     };
 
     handleSubmit = (event) => {
-        event.PreventDefault();
-        PhotoModel.createPhoto(this.state)
+        event.preventDefault();
+        console.log(this.state)
+        const userId = localStorage.getItem("id")
+        PhotoModel.createPhoto(this.state, userId)
             .then((result) => {
                 console.log(result);
+                this.props.history.push(`/users/${userId}`);
             });
             // Redirect to Photos Index (history comes from react-router-dom)
-        this.props.history.push('/photos');
+        // this.props.history.push('/photos');
     }
 
     render() {

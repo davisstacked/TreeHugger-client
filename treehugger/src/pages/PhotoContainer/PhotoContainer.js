@@ -12,7 +12,8 @@ class PhotoContainer extends React.Component {
         // Get All Photos
         PhotoModel.getPhotoById(this.props.match.params.id)
             .then((result) => {
-                console.log(result);
+                console.log('photodata', result);
+                this.setState({photo: result})
             })
             .catch((err) => console.log(err)) 
     }

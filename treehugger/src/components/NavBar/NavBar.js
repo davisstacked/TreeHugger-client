@@ -8,7 +8,6 @@ function NavBar({ currentUser, logout }) {
     <nav>
       <div className="container">
         <NavLink className="logo" to='/'>
-          
           <h1>TreeHugger</h1>
         </NavLink>
         <ul className="nav-list">
