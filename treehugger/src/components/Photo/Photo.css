@@ -9,7 +9,11 @@
     margin-bottom: 30px;
     color: white;
     transition: 0.1s linear;
-  }
+    -webkit-transition: 0.1s linear;
+    -moz-transition: 0.1s linear;
+    -ms-transition: 0.1s linear;
+    -o-transition: 0.1s linear;
+}
   
   .photo-card:hover {
     transform: scale(1.1);

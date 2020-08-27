@@ -11,7 +11,6 @@ class EditPhotoContainer extends React.Component {
 
     // Get the Photo (by ID) to be edited and update status
     componentDidMount() {
-        console.log('hello world')
         PhotoModel.getPhotoById(this.props.match.params.id)
             .then((result) => this.setState(result))
             .catch((err) => console.log(err));

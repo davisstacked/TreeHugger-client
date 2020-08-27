@@ -35,6 +35,9 @@
     flex-shrink: 0;
     background-color: darkgreen;
     color: beige;
+    position: absolute;
+    bottom: 0;
+    width: 100%
   }
 
   
