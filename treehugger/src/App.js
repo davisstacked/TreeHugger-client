@@ -5,7 +5,7 @@ import Routes from './config/routes';
 import NavBar from './components/NavBar/NavBar';
 import setAuthHeader from './utils/setAuthHeader';
 import './App.css';
-import Footer from './Footer/Footer';
+import Footer from './components/Footer/Footer';
 
 
 class App extends React.Component {
@@ -54,6 +54,7 @@ class App extends React.Component {
         <div className="container">
           <Routes currentUser={this.state.currentUser} setCurrentUser={this.setCurrentUser} />
         </div> 
+        <Footer />
       </React.Fragment>
     );
   }

@@ -9,23 +9,23 @@ function Photo (props) {
 
     const handleDelete = () => {
         PhotoModel.deletePhoto(photo._id)
-        .then((result) => props.history.push('/photos'))
+        .then((result) => props.history.push('/photos'))  
         .catch((err) => console.log(err));
     };
 
 
 return (
     <>
-      <div className="game-card" style={!list ? {margin: '0 auto'} : {}}>
+      <div className="photo-card" style={!list ? {margin: '0 auto'} : {}}>
         <section className="image-wrapper">
           <img src={photo.image} alt={photo.title} height="100" />
-        </section>
-        <section className="content-wrapper">
-          <h4>{photo.title}</h4>
         </section>
       </div>
       {!list && (
         <div className='photo-card-actions'>
+        <section className="content-wrapper">
+          <h4>{photo.title}</h4>
+        </section>
           <p><strong>Caption: </strong> {photo.caption}</p>
           <button className='delete' onClick={handleDelete}>Delete</button>
           <Link to={`/photos/${photo._id}/edit`} className='edit'>Edit</Link>
