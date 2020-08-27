@@ -55,6 +55,7 @@ class App extends React.Component {
           <Routes currentUser={this.state.currentUser} setCurrentUser={this.setCurrentUser} />
         </div> 
         <Footer />
+
       </React.Fragment>
     );
   }
