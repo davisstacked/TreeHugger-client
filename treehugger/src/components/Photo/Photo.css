@@ -14,6 +14,10 @@
     -ms-transition: 0.1s linear;
     -o-transition: 0.1s linear;
 }
+
+.edit {
+  text-decoration: none;
+}
   
   .photo-card:hover {
     transform: scale(1.1);

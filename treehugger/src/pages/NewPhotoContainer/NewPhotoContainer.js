@@ -33,19 +33,19 @@ class NewPhotoContainer extends React.Component {
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <h2>Add a New Photo</h2>
-                    <div>
-                        <label htmlFor="">Title</label>
-                        <input onInput={this.handleChange} type="text" name="title" />
+                    <div className="form-group row">
+                        <label className="col-sm-2 col-form-label" htmlFor="">Title</label>
+                        <input className="form-control" onInput={this.handleChange} type="text" name="title" />
                     </div>
-                    <div>
-                        <label htmlFor="">Image</label>
-                        <input onInput={this.handleChange} type="text" name="image" />
+                    <div className="form-group row">
+                        <label className="col-sm-2 col-form-label" htmlFor="">Image</label>
+                        <input className="form-control" onInput={this.handleChange} type="text" name="image" />
                     </div>
-                    <div>
-                        <label htmlFor="">Caption</label>
-                        <input onInput={this.handleChange} type="text" name="caption" /> 
+                    <div className="form-group row">
+                        <label className="col-sm-2 col-form-label" htmlFor="">Caption</label>
+                        <input className="form-control" onInput={this.handleChange} type="text" name="caption" /> 
                     </div>
-                    <button type="submit">Add Photo</button>
+                    <button className="form-control btn btn-success float-right" type="submit">Add Photo</button>
                 </form>
             </div>
         );

@@ -8,8 +8,8 @@ function Photo (props) {
     const { photo, list } = props;
 
     const handleDelete = () => {
-        PhotoModel.deletePhoto(photo._id)
-        .then((result) => props.history.push('/photos'))  
+      PhotoModel.deletePhoto(photo._id)
+        .then((result) => props.history.push('/photos'))
         .catch((err) => console.log(err));
     };
 
@@ -28,7 +28,7 @@ return (
         </section>
           <p><strong>Caption: </strong> {photo.caption}</p>
           <button className='delete' onClick={handleDelete}>Delete</button>
-          <Link to={`/photos/${photo._id}/edit`} className='edit'>Edit</Link>
+          <button className='edit'><Link to={`/photos/${photo._id}/edit`} className='edit'>Edit</Link></button>
         </div>
       )}
     </>
@@ -36,4 +36,3 @@ return (
 }
 
 export default withRouter(Photo);
-
