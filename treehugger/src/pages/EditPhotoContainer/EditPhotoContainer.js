@@ -1,4 +1,5 @@
 import React from 'react';
+
 import PhotoModel from '../../models/photo';
 
 class EditPhotoContainer extends React.Component {
@@ -10,6 +11,7 @@ class EditPhotoContainer extends React.Component {
 
     // Get the Photo (by ID) to be edited and update status
     componentDidMount() {
+        console.log('hello world')
         PhotoModel.getPhotoById(this.props.match.params.id)
             .then((result) => this.setState(result))
             .catch((err) => console.log(err));
@@ -29,9 +31,9 @@ class EditPhotoContainer extends React.Component {
         this.props.history.push(`/photos/${this.props.match.params.id}`);
     };
 
-    render () {
+    render() {
         const { title, image, caption } = this.state;
-
+        console.log('in edit')
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>

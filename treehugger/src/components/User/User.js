@@ -9,9 +9,8 @@ function User (props) {
     const photos = []
     if (user.photos) {
         for (let i=0; i < user.photos.length; i++) {
-            photos.push( <img src={user.photos[i].image} height="200" />)
+            photos.push(<Link to={`/photos/${user.photos[i]._id}`}><img src={user.photos[i].image} height="200" /></Link>)
       }
-    //   <Link to={photos/user.photos[i]._id}}></Link>
     }
     return (
             <div className="user-card">

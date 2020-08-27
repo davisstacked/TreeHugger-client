@@ -19,8 +19,8 @@ export default ({ currentUser, setCurrentUser }) => (
             ? <NewPhotoContainer />
             : <Redirect to='/login' />
         } />
-        <Route path='/photos/:id/edit' componenet={EditPhotoContainer} />
-        <Route path='/photos/:id' component={PhotoContainer} />
+        <Route exact path='/photos/:id' component={PhotoContainer} />
+        <Route path='/photos/:id/edit' component={EditPhotoContainer} />
         <Route path='/photos' component={PhotosListContainer} />
         <Route path='/users/:id' component={UserContainer} /> 
         <Route path='/login' render={() => <Login setCurrentUser={setCurrentUser} />} /> 

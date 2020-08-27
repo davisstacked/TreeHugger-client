@@ -47,7 +47,7 @@ class Login extends Component {
                 </div>
                 <div className="form-group row">
                     <div className="col-sm-2 col-form-label">
-                        <button className="form-control btn btn-success float-left" type="submit">Login</button>
+                        <button className="form-control btn btn-success float-right" type="submit">Login</button>
                     </div>
                 </div>
             </form>
