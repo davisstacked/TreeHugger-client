@@ -18,7 +18,7 @@ return (
     <>
       <div className="photo-card" style={!list ? {margin: '0 auto'} : {}}>
         <section className="image-wrapper">
-          <img src={photo.image} alt={photo.title} height="100" />
+        <Link to={`/photos/${photo._id}`}><img src={photo.image} alt={photo.title} height="100" /></Link>
         </section>
       </div>
       {!list && (

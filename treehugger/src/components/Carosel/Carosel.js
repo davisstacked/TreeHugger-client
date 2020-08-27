@@ -6,6 +6,7 @@ import mountains from './images/mountains.jpg'
 
 function Carosel () {
     return(
+    
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div className="carousel-inner">
             <div className="carousel-item active">
