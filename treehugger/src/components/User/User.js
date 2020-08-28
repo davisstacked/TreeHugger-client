@@ -9,7 +9,7 @@ function User (props) {
     const photos = []
     if (user.photos) {
         for (let i=0; i < user.photos.length; i++) {
-            photos.push(<Link to={`/photos/${user.photos[i]._id}`}><img src={user.photos[i].image} height="200" /></Link>)
+            photos.push(<Link to={`/photos/${user.photos[i]._id}`}><img className="fotos" src={user.photos[i].image} height="200" /></Link>)
       }
     }
     return (
@@ -24,7 +24,6 @@ function User (props) {
             <button>Add Photos</button>
                 </Link>
                 <section className="profile-photos-wrapper">
-                    {/* <img src={user.photos} /> */}
                     { photos } 
                 </section>
             </div>
