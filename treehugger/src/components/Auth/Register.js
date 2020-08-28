@@ -47,7 +47,7 @@ class Register extends Component {
                 </div>
                 <div className="form-group row">
                     <div className="col-sm-2 col-form-label">
-                        <button className="btn btn-success float-right" type="submit">Register</button>
+                        <button className="form-control btn btn-success float-right" type="submit">Register</button>
                     </div>
                 </div>
             </form>
