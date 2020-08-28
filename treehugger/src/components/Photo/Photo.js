@@ -31,7 +31,7 @@ return (
           <p>{photo.caption}</p>
           </section>
           <section className="content-wrapper">
-          <button className='delete' onClick={handleDelete}>Delete</button>
+          <button className='delete form-control btn btn-success float-right' onClick={handleDelete}>Delete</button>
           <button className='edit'><Link to={`/photos/${photo._id}/edit`} className='edit'>Edit</Link></button>
           </section>
         </div>
