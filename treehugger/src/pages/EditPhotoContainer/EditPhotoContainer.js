@@ -37,19 +37,19 @@ class EditPhotoContainer extends React.Component {
             <div>
                 <form onSubmit={this.handleSubmit}>
                         <h2>Edit Photo</h2>
-                    <div>
-                        <label htmlFor="title">Title</label>
-                        <input type="text" name="title" id="title" value={title} onChange={this.handleChange} />
+                    <div className="form-group row">
+                        <label className="col-sm-2 col-form-label" htmlFor="title">Title</label>
+                        <input className="form-control" type="text" name="title" id="title" value={title} onChange={this.handleChange} />
                     </div>
-                    <div>
-                        <label htmlFor="image">Image</label>
-                        <input type="text" name="image" id="image" value={image} onChange={this.handleChange} />
+                    <div className="form-group row">
+                        <label className="col-sm-2 col-form-label" htmlFor="image">Image</label>
+                        <input className="form-control" type="text" name="image" id="image" value={image} onChange={this.handleChange} />
                     </div>
-                    <div>
-                        <label htmlFor="caption">Caption</label>
-                        <input type="text" name="caption" id="caption" value={caption} onChange={this.handleChange} />
+                    <div className="form-group row">
+                        <label className="col-sm-2 col-form-label" htmlFor="caption">Caption</label>
+                        <input className="form-control" type="text" name="caption" id="caption" value={caption} onChange={this.handleChange} />
                     </div>
-                    <button type="submit">Update Photo</button>
+                    <button className="form-control btn btn-success float-right" type="submit">Update Photo</button>
                 </form>
             </div>
         )

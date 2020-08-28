@@ -7,12 +7,15 @@
     width: 200px;
     height: 250px;
     margin-bottom: 30px;
-    color: white;
     transition: 0.1s linear;
     -webkit-transition: 0.1s linear;
     -moz-transition: 0.1s linear;
     -ms-transition: 0.1s linear;
     -o-transition: 0.1s linear;
+}
+
+.edit {
+  text-decoration: none;
 }
   
   .photo-card:hover {
@@ -35,7 +38,7 @@
   }
   
   .content-wrapper {
-    padding: 0 20px;
+    padding: 10px 20px;
     text-align: center;
   }
   

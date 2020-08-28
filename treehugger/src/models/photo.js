@@ -35,8 +35,9 @@ class PhotoModel {
         })
             .then((response) => response.json())
     }
+    
 
-    static deletePhoto = (id) => {
+      static deletePhoto = (id) => {
         return fetch(`${url}/${id}`, {
           method: 'DELETE',
           headers: {
