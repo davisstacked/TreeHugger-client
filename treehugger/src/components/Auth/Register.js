@@ -17,7 +17,7 @@ class Register extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        axios.post(`${process.env.REACT_APP_API}/auth/register`, this.state)
+        axios.post(`${process.env.REACT_APP_API}/auth/register`, this.state) // ${process.env.REACT_APP_API} change the localhost to this at production. add the name of site later.
             .then((res) => {
                 console.log(res);
                 this.props.history.push('/login');
