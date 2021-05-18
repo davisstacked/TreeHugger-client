@@ -17,7 +17,7 @@ class PhotoModel {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'authorization': token,
+                'authorization': localStorage.getItem('token'),
             },
             body: JSON.stringify({ photo, userId })
         })
