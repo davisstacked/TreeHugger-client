@@ -19,8 +19,7 @@ class PhotoContainer extends React.Component {
     }
 
     render() {
-        console.log(this.props);
-        return <Photo photo={this.state.photo} list={false} />;
+        return <Photo photo={this.state.photo} list={false} buttons={true}/>
     }
 }
 

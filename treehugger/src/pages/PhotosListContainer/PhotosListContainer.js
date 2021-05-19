@@ -19,7 +19,13 @@ class PhotoListContainer extends React.Component {
     }
 
     render() {
-        return <PhotosList photos={this.state.photos} />;
+        return (
+            <div>
+                <h1>Community Photos</h1>
+                <PhotosList photos={this.state.photos} />
+            </div>
+        )
+        
     }
 }
 

@@ -17,7 +17,7 @@ class PhotoModel {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'authorization': localStorage.getItem('token'),
+                'authorization': token,
             },
             body: JSON.stringify({ photo, userId })
         })
@@ -29,7 +29,7 @@ class PhotoModel {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
-                'authorization': localStorage.getItem('token'),
+                'authorization': token,
             },
             body: JSON.stringify(photo)
         })
@@ -42,7 +42,7 @@ class PhotoModel {
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json',
-            'authorization': localStorage.getItem('token'),
+            'authorization': token,
           },
         })
           .then((response) => response.json())
